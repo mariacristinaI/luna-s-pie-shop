@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <title>Luna's Pie Shop</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pies.html">Pies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside><img id="logo" src="assets/images/HomemadePies.png" alt="Luna making pies"></aside>
+        <article>
+            <img id="banner" src="assets/images/banner.png" alt="Luna's Pie Shop">
+            <h1>Welcome to Luna's Pie Shop</h1>
+            <p class="Welcome">Each pie has a purpose.
+               From pecan to plum, our pies are made in with warmth.
+               Our experience supervisor cat ensures the best taste and quality.
+               Take a moment to
+               <a href="pies.html">browser our pies</a>
+               and see which of our delectable desserts are soon to arrive on your doorstep.
+               If you are unsure about what are our products truly are -
+               <a href="https://en.wikipedia.org/wiki/Pie">Learn more about pies</a>
+            </p>
+            <br><hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Baker Cat</th>
+                        <th>Shop</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luna:</td>
+                        <td class="CTA">Do you want a pie?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pies.html">Pies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        function greet() {
+            let name = "Luna";
+
+            if (name === "Luna"){
+                console.log("Hello customer! Go to the Pies page.");
+            } else {
+                console.log("The cat is missing?");
+            }
+        }
+
+        greet();
+
+        function goodbye() {
+            return "See you there!";
+        }
+        let message = goodbye();
+        console.log(message);
+    </script>
+</body>
+</html>

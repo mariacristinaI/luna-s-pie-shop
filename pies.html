@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css"/>
-    <title>Pies | Luna's Pie Shop</title>
+    <title>Pies | Luna's Café & Pie Shop</title>
 </head>
 <body>
     <header>
@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pies.html">Pies</a></li>
+                <li><a href="cafe-menu.html">Café Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -21,6 +22,7 @@
         <aside><img id="logo" src="assets/images/HomemadePies.png" alt="Luna making pies"></aside>
         <article>
             <h1>Homemade Pies</h1>
+            <hr>
             <section class="columns-desktop">
                 <div class="pie">
                     <img src="assets/images/pies/apple-pie.png" alt="Apple Pie"/>
@@ -41,46 +43,11 @@
                     <button data-order="apple-pie">Order</button>
                 </div>
             </section>
+            <h2 id="pie-stock">More pies will be in stock soon!</h2>
         </article>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pies.html">Pies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </footer>
-    <script>  
-        let numberOfPies = [1, 2];
-        for (let i = 0; i < numberOfPies.length; i++) {
-            console.log(numberOfPies[i]);
-        };
-
-        window.addEventListener("DOMContentLoaded", function(e){
-            const orderButtons = document.querySelectorAll("button[data-order]");
-            orderButtons.forEach(function(button){
-
-                button.addEventListener("click", function(e){
-                    const button = e.currentTarget;
-                    const container = button.parentNode;
-
-                    const order = {
-                        id: button.getAttribute("data-order"),
-                        title: container.querySelector(".title").innerText,
-                        price: container.querySelector(".price").innerText,
-                        desc: container.querySelector(".desc").innerText
-                    };
-
-                    localStorage.setItem("order", JSON.stringify(order));
-
-                    const url = window.location.href.replace("pies.html", "order.html");
-                    window.location.href = url;
-                });
-            });
-            console.log("The pies are loaded.");
-        });
-    </script>
+    <hr>
+    <footer>&copy;<span id="year"></span> Maria-Cristina Iosub</footer>
+    <script src="shop.js"></script>
 </body>
 </html>

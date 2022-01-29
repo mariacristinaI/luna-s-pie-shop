@@ -1,4 +1,4 @@
-# Luna-s-Pie-Shop
+# Luna's Café & Pie Shop
 A simple e-commerce web app highlighting the use of Local Storage API and Geolocation API.
 Inline Javascript was used for demonstration purposes.
 

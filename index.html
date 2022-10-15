@@ -7,54 +7,95 @@
     <meta name="description" content="A cafe and pie shop owned by a cat named Luna.">
     <meta name="keywords" content="Cat, Pie Shop, Cafe">
     <meta name="author" content="Maria-Cristina Iosub">
-    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     <title>Luna's Café & Pie Shop</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="pies.html">Pies</a></li>
-                <li><a href="cafe-menu.html">Café Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div>
+                <button id="hamburger-btn">&#9776;</button>
+                <ul id="primary-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="pies.html">Pies</a></li>
+                    <li><a href="cafe-menu.html">Café Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            <div>
         </nav>
     </header>
     <main>
-        <aside><img id="logo" src="assets/images/HomemadePies.png" alt="Luna making pies"></aside>
+        <aside>
+            <a title="Homepage" href="index.html">
+                <img id="logo" src="assets/images/HomemadePies.png" alt="Luna making pies">
+            </a>
+            <h3>Luna's Here!</h3>
+            <h4>Our Weekly Promotions</h4>
+            <br>
+            <div class="pie-promotion">
+                <h4>Spicy Apple Pie</h4>
+                <samp>€12.95 - serves 4</samp>
+                <br>
+                <a href="pies.html">
+                <img src="assets/images/pies/spicy-apple-pie.webp" width="100%">
+                </a>
+            </div>
+            <p style="width:150px;">
+                You now have the possibility to order amazing pies whenever you feel like it! 
+                <br><br>
+                Additionally, you can check out our available <a href="cafe-menu.html" style="color:var(--macha);">coffee and desserts</a>! 
+            </p>
+        </aside>
         <article>
-            <img id="banner" src="assets/images/banner.png" alt="Luna's Pie Shop">
+            <div id="home-highlight">
+                <img id="banner" src="assets/images/sample.webp" alt="Luna's Pie Shop">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="https://mariacristinai.github.io/CatPhotoApp/" target="_blank">
+                                    <img id="baker" src="assets/images/baker.webp" width="150px" height="250px" alt="Luna">
+                                </a>
+                            </td>
+                            <td class="CTA">
+                                Do you want a pie?
+                                <a href="pies.html">
+                                    <img id="sample" src="assets/images/banner.webp">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <h1>Welcome to Luna's Café & Pie Shop</h1>
-            <p class="established">Est. 2021</p>
+            <p class="established">Est. 2022</p>
             <p class="Welcome">Each pie has a purpose.
                From pecan to plum, our pies are made in with warmth.
                Our experience supervisor cat ensures the best taste and quality.
+               She has been ensuring top quality when the most delicious pies were baked at her home.
+                <br>
                Take a moment to
                <a href="pies.html">browser our pies</a>
                and see which of our delectable desserts are soon to arrive on your doorstep.
                If you are unsure about what are our products truly are -
-               <a href="https://en.wikipedia.org/wiki/Pie" target="_blank">Learn more about pies</a>
+               <a href="https://en.wikipedia.org/wiki/Pie" target="_blank">Learn more about pies</a>.
+               <br><br>
             </p>
             <br>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Baker Cat</th>
-                        <th>Shop</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Luna:</td>
-                        <td class="CTA">Do you want a pie?</td>
-                    </tr>
-                </tbody>
-            </table>
         </article>
     </main>
-    <hr>
-    <footer>&copy;<span id="year"></span> Maria-Cristina Iosub</footer>
-    <script src="script.js"></script>
+    <footer><a id="author" href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year"></span> M.C.I.</a></footer>
+    <script src="js/script.js"></script>
+    <script src="js/welcome.js"></script>
 </body>
 </html>

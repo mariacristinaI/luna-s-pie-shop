@@ -1,5 +1,5 @@
 // PIES Page
-let numberOfPies = [1, 2];
+let numberOfPies = [1, 2, 3];
 for (let i = 0; i < numberOfPies.length; i++) {
     console.log(numberOfPies[i]);
 };
@@ -28,6 +28,18 @@ window.addEventListener("DOMContentLoaded", function(e){
     console.log("The pies are loaded.");
 });
 
-const today = new Date();
-let currentYear = today.getFullYear();
-document.getElementById("year").innerHTML = currentYear;
+function save() {
+    sessionStorage.setItem("apple-pie", true);
+}
+
+window.onload = function() {
+    var favorite = document.getElementById('favorite');
+    if(window.sessionStorage) {
+        if(sessionStorage.getItem('apple-pie') == 'true') {
+            favorite.innerHTML = "The apple pie is one of your favorites. ˶ˆ꒳ˆ˵"
+        }
+        if(sessionStorage.length == 0) {
+            favorite.innerHTML = "Enjoy browsing!"
+        }
+    }
+}

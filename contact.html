@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     <title>Contact | Luna's Café & Pie Shop</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pies.html">Pies</a></li>
-                <li><a href="cafe-menu.html">Café Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div>
+                <button id="hamburger-btn">&#9776;</button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pies.html">Pies</a></li>
+                    <li><a href="cafe-menu.html">Café Menu</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            <div>
         </nav>
     </header>
     <main>
-        <aside><img id="logo" src="assets/images/HomemadePies.png" alt="Luna making pies"></aside>
+        <aside>
+            <a title="Homepage" href="index.html">
+                <img id="logo" src="assets/images/HomemadePies.png" alt="Luna's Café & Pie Shop Logo">
+            </a>
+        </aside>
         <article id="contact">
             <h1>Contact</h1>
             <p>We are always glad to hear from you!</p>
@@ -29,8 +37,7 @@
             </p>
         </article>
     </main>
-    <hr>
-    <footer>&copy;<span id="year"></span> Maria-Cristina Iosub</footer>
-    <script src="script.js"></script>
+    <footer><a id="author" href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year"></span> M.C.I.</a></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

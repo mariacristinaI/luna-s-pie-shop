@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap');
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: $whiteChocolate;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23edebe2' fill-opacity='0.27' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-family: sans-serif;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    background-color: $primaryColor;
+    border-bottom: 1px solid #755139FF;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+        a:visited, a:link {
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+            font-size: 1.7rem;
+            text-decoration: none;
+            text-shadow: -1px -1px 0 $orangeChocolate;
+        }
+    #hamburger-btn {
+        background-color: $primaryColor;
+        border: none;
+        color: $whiteChocolate;
+        font-size: 2.4rem;
+        cursor: pointer;
+        padding: 0 30px 0 2vw;
+    }
+    li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0 5px;
+        padding: 15px;
+    }
+        li.active {
+            box-shadow: 1px 3px 1px 1px $highlightColor;
+        }
+        li:hover {
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 7%;
+        }
+}
+
+main {
+    display: block;
+    padding-top: 3em;
+    min-height: 85%;
+}
+
+aside {
+    width: 214px;
+}
+    #logo {
+        height: 150px;
+        width: 150px;
+        /*clip-path: polygon(0 0, 62% 0, 80% 16%, 99% 33%, 81% 48%, 63% 62%, 0 63%);*/
+        margin-top: 30px;
+    }
+article {
+    width: 80%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(190, 173, 152, 0.55);
+    border: 1px solid $orangeChocolate;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    margin-top: 0.5em;
+}
+    h1, .established {
+        text-align: center;
+    }
+    .established {
+        font-style: italic;
+    }
+
+h3 {
+    font-size: 1.3em;
+}
+
+p {
+    margin: .5em 0 .5em 0;
+}
+
+
+aside, table {
+    text-align: center;
+}
+
+#banner {
+    border-bottom: 2px solid $whiteChocolate;
+    filter: opacity(0.9);
+    width: 670px;
+    max-width: 100%;
+    height: 316px;
+}
+.Welcome {
+    font-size: 1.5em;
+    padding: 15px;
+    border: 1px solid $orangeChocolate;
+}
+
+.Welcome, .pie, #baker, #sample, .pie-promotion {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #F2EDD7FF;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(66, 42, 31, 0.301);
+}
+
+a, #favorite {
+    color: $markingColor;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pie-promotion, .star {
+    background-color: #F2EDD7FF;
+}
+
+/*table {
+    border: 2px solid #edebe2;
+    border-bottom: 1px solid black;
+}*/
+    thead {
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+
+    tbody {
+        font-size: 1.5rem;
+    }
+    th {
+        padding: 10px 20px 0 20px
+    }
+
+.CTA {
+    font-family: 'Dancing Script', cursive;
+    color: $secondaryColor;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.columns {
+    display: flex;
+}
+
+footer{
+    background-color: #61574c;
+    text-align:center;
+    padding: 7px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    #author {
+        color: $whiteChocolate;
+        font-family: 'Satisfy', cursive !important;
+        font-size: 1em;
+        font-weight: initial;
+    }
+    
+    #author:hover {
+        animation-name: text-color;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;}
+    
+    @keyframes text-color {
+        100% {
+            color: $primaryColor;
+         }
+    }
+}
+
+/**** HOME PAGE ****/
+#home-highlight {
+    display: grid;
+}
+
+.pie-promotion {
+    padding: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/**** PIES PAGE ****/
+.pie {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+
+    img {
+        width: 100%;
+    }
+    .columns {
+        width: 100%;
+    }
+    .title {
+        font-weight: bold;
+        font-size: 1rem;
+        width: 70%;
+    }
+    .title, .price {
+        padding-top: 10px;
+    }
+    .price {
+        text-align: right;
+        width: 30%;
+    }
+    .desc {
+        text-align: center;
+    }
+    button {
+        color: #fff;
+        background-color: $secondaryColor;
+        border: 1px solid $secondaryColor;
+        border-radius: 3px;
+        font-weight: bold;
+        margin-left: 35%;
+        padding: 10px;
+    }
+}
+
+#pie-stock {
+    text-align: center;
+    font-style: italic;
+}
+
+#favorite {
+    text-align: center;
+}
+#favorite-button {
+    background-color: $whiteChocolate;
+    border: 1px solid $orangeChocolate;
+    color: $orangeChocolate;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    padding: 2px;
+    margin: 0;
+}
+    #favorite-button:active {
+        color: $primaryColor;
+    }
+
+/**** ORDER & MENU PAGE ****/
+#cart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1vw;
+}
+#order-form {
+    .input-group {
+        margin-bottom: 20px;
+    }
+    
+    .input-group input, .input-group textarea, .input-group select {
+        padding: 10px;
+        border: 1px solid #999;
+        border-radius: 2px;
+        width: 100%;
+    }
+    
+    label {
+        font-weight: 600;
+    }
+    
+    input[type="reset"] {
+        background-color: transparent;
+        border: 0;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    input[type="submit"] {
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 10px;
+    }
+}
+
+.menu-subheadline {
+    text-align: center;
+    padding: 7px 10px 20px 7px;
+}
+
+hr {
+    color: $orangeChocolate;
+    height: 2px;
+    margin-bottom: 15px;
+}
+
+#cafe-line {
+    color: $secondaryColor;
+    margin-top: 15px;
+}
+
+#menu-background {
+    background-color: rgba(205, 185, 158, 0.5);
+}
+
+.item p {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding-right: 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+    .flavour, .dessert {
+        text-align: right;
+        width: 49%;
+    }
+    
+    .price {
+        font-style: italic;
+        text-align: left;
+        width: 45%;
+    }
+
+/**** CONTACT PAGE ****/
+#contact {
+    font-size: 1.5rem;
+    border-right: 1px solid $secondaryColor;
+}

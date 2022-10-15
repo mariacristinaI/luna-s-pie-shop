@@ -4,37 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     <title>Pies | Luna's Café & Pie Shop</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pies.html">Pies</a></li>
-                <li><a href="cafe-menu.html">Café Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div>
+                <button id="hamburger-btn">&#9776;</button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="pies.html">Pies</a></li>
+                    <li><a href="cafe-menu.html">Café Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            <div>
         </nav>
     </header>
     <main>
-        <aside><img id="logo" src="assets/images/HomemadePies.png" alt="Luna making pies"></aside>
+        <aside>
+            <a title="Homepage" href="index.html">
+                <img id="logo" src="assets/images/HomemadePies.png" alt="Luna's Café & Pie Shop Logo">
+            </a>
+            <p class="pie" id="favorite" style="width:150px;"></p>
+        </aside>
         <article>
             <h1>Homemade Pies</h1>
             <hr>
-            <section class="columns-desktop">
-                <div class="pie">
-                    <img src="assets/images/pies/apple-pie.png" alt="Apple Pie"/>
+            <section class="row">
+                <div class="pie small-12 medium-6 large-2">
+                    <button id="favorite-button" onclick="save()" type="button">❤</button>
+                    <img src="assets/images/pies/apple-pie.webp" alt="Apple Pie"/>
                     <div class="columns">
                         <div class="title">Apple Pie</div>
                         <div class="price">€11.95</div>
                     </div>
-                    <p class="desc">Our famous apple pie</p>
+                    <p class="desc">Our famous apple pie!</p>
                     <button data-order="apple-pie">Order</button>
                 </div>
-                <div class="pie">
-                    <img src="assets/images/pies/cherry-pie.png" alt="Cherry Pie"/>
+                <div class="pie star small-12 medium-6 large-2">
+                    <img src="assets/images/pies/spicy-apple-pie.webp" alt="Cherry Pie"/>
+                    <div class="columns">
+                        <div class="title">Spicy Apple Pie</div>
+                        <div class="price">€12.95</div>
+                    </div>
+                    <p class="desc">A familiar taste with a twist!</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
+                <div class="pie small-12 medium-6 large-2">
+                    <img src="assets/images/pies/cherry-pie.webp" alt="Cherry Pie"/>
                     <div class="columns">
                         <div class="title">Cherry Pie</div>
                         <div class="price">€14.95</div>
@@ -42,12 +61,66 @@
                     <p class="desc">A summer classic!</p>
                     <button data-order="apple-pie">Order</button>
                 </div>
+                <div class="pie small-12 medium-6 large-2">
+                    <img src="assets/images/pies/cranberry-pie.webp" alt="Cranberry Pie"/>
+                    <div class="columns">
+                        <div class="title"> Cranberry Pie</div>
+                        <div class="price">€17.95</div>
+                    </div>
+                    <p class="desc"> A Christmas favorite.</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
+                <div class="pie small-12 medium-6 large-2">
+                    <img src="assets/images/pies/peach-pie.webp" alt="Peach Pie"/>
+                    <div class="columns">
+                        <div class="title">Peach Pie</div>
+                        <div class="price">€17.95</div>
+                    </div>
+                    <p class="desc">Sweet as peach</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
+                <div class="pie small-12 medium-6 large-2">
+                    <img src="assets/images/pies/rhubarb-pie.webp" alt="Rhubarb Pie"/>
+                    <div class="columns">
+                        <div class="title">Rhubarb Pie</div>
+                        <div class="price">€20.95</div>
+                    </div>
+                    <p class="desc">My God, so sweet!</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
+                <div class="pie small-12 medium-6 large-2">
+                    <img src="assets/images/pies/strawberry-pies.webp" alt="Strawberry Pie"/>
+                    <div class="columns">
+                        <div class="title">Strawberry Pie</div>
+                        <div class="price">€17.95</div>
+                    </div>
+                    <p class="desc">Our delicious strawberry pie!</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
+                <div class="pie small-12 medium-6 large-2">
+                    <img src="assets/images/pies/pumpkin-pie.webp" alt="Pumpkin Pie"/>
+                    <div class="columns">
+                        <div class="title">Pumpkin Pie</div>
+                        <div class="price">€17.95</div>
+                    </div>
+                    <p class="desc">Our Halloween favorite!</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
+                <div class="pie small-12 medium-6 large-2">
+                    <img src="assets/images/pies/christmas-apple-pie.webp" alt="Christmas Apple Pie"/>
+                    <div class="columns">
+                        <div class="title"> Christmas Pie</div>
+                        <div class="price">€19.95</div>
+                    </div>
+                    <p class="desc">Happy holidays with this pie!</p>
+                    <button data-order="apple-pie">Order</button>
+                </div>
             </section>
             <h2 id="pie-stock">More pies will be in stock soon!</h2>
         </article>
     </main>
-    <hr>
-    <footer>&copy;<span id="year"></span> Maria-Cristina Iosub</footer>
-    <script src="shop.js"></script>
+    <footer><a id="author" href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year"></span> M.C.I.</a></footer>
+    <script src="js/script.js"></script>
+    <script src="js/shop.js"></script>
 </body>
 </html>

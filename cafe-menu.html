@@ -4,63 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     <title>Café Menu | Luna's Café & Pie Shop</title>
 </head>
 <body>
-        <header>
-            <nav>
-                <ul>
+    <header>
+        <nav>
+            <div>
+                <button id="hamburger-btn">&#9776;</button>
+                <ul id="primary-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pies.html">Pies</a></li>
-                    <li><a href="cafe-menu.html">Café Menu</a></li>
+                    <li class="active"><a href="cafe-menu.html">Café Menu</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <aside><img id="logo" src="assets/images/HomemadePies.png" alt="Luna making pies"></aside>
-            <article id="menu-background">
-                <h1>Café Menu</h1>
-                <br><hr>
-                <section>
-                    <h2 class="menu-subheadline">Coffee</h2>
-                    <div class="item">
-                        <p class="flavour">French Vanilla</p><p class="price">3.00</p>
-                    </div>
-                    <div class="item">
-                        <p class="flavour">Caramel Macchiato</p><p class="price">3.75</p>
-                    </div>
-                    <div class="item">
-                        <p class="flavour">Pumpkin Spice</p><p class="price">3.50</p>
-                    </div>
-                    <div class="item">
-                        <p class="flavour">Hazelnut</p><p class="price">4.00</p>
-                    </div>
-                    <div class="item">
-                        <p class="flavour">Mocha</p><p class="price">4.50</p>
-                    </div>
-                </section>
-                <section>
-                    <br>
-                    <h2 class="menu-subheadline">Desserts</h2>
-                    <div class="item">
-                        <p class="dessert">Donut</p><p class="price">1.50</p>
-                    </div>
-                    <div class="item">
-                        <p class="dessert">Fruit Tart</p><p class="price">2.75</p>
-                    </div>
-                    <div class="item">
-                        <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-                    </div>
-                    <div class="item">
-                        <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-                    </div>
-                </section>
-            </article>
-        </main>
-        <hr>
-    <footer>&copy;<span id="year"></span> Maria-Cristina Iosub</footer>
-    <script src="script.js"></script>
+            <div>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <a title="Homepage" href="index.html">
+                <img id="logo" src="assets/images/HomemadePies.png" alt="Luna's Café & Pie Shop Logo">
+            </a>
+            <h4>Browse our pies.</h4>
+            <h4>We have:</h4>
+            <!--<iframe src="pies.html" width="150px" height="150px" frameborder="0"></iframe>-->
+            <ul style="list-style-type:square; text-align:left;">
+                <li>Fruit Pies</li>
+                <li>Seasonal Pies</li>
+            </ul>
+            <form action="pies.html" enctype="application/x-www-form-urlencoded" method="GET"> 
+                <input type="text" name="text" class="search" placeholder="Search our store">
+                <input type="submit" name="submit" class="submit" value="Search">
+            </form>
+            <hr id="cafe-line">
+            <h4>Our Weekly Promotions</h4>
+            <br>
+            <div class="pie-promotion">
+                <h4>Spicy Apple Pie</h4>
+                <samp>€12.95 - serves 4</samp>
+                <br>
+                <a href="pies.html">
+                <img src="assets/images/pies/spicy-apple-pie.webp" width="100%">
+                </a>
+            </div>
+        </aside>
+        <article id="menu-background">
+            <h1>Café Menu</h1>
+            <br><hr>
+            <section>
+                <h2 class="menu-subheadline">Coffee</h2>
+                <div class="item">
+                    <p class="flavour">French Vanilla</p><p class="price">€3.00</p>
+                </div>
+                <div class="item">
+                    <p class="flavour">Caramel Macchiato</p><p class="price">€3.75</p>
+                </div>
+                <div class="item">
+                    <p class="flavour">Pumpkin Spice</p><p class="price">€3.50</p>
+                </div>
+                <div class="item">
+                    <p class="flavour">Hazelnut</p><p class="price">€4.00</p>
+                </div>
+                <div class="item">
+                    <p class="flavour">Mocha</p><p class="price">€4.50</p>
+                </div>
+            </section>
+            <section>
+                <br>
+                <h2 class="menu-subheadline">Desserts</h2>
+                <div class="item">
+                    <p class="dessert">Donut</p><p class="price">€1.50</p>
+                </div>
+                <div class="item">
+                    <p class="dessert">Fruit Tart</p><p class="price">€2.75</p>
+                </div>
+                <div class="item">
+                    <p class="dessert">Cheesecake</p><p class="price">€3.00</p>
+                </div>
+                <div class="item">
+                    <p class="dessert">Cinnamon Roll</p><p class="price">€2.50</p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer><a id="author" href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year"></span> M.C.I.</a></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

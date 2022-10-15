@@ -35,9 +35,45 @@
                 <a href="mailto:email@example.com?subject=Interested%20in%20pies">Send us an email</a>
                 and let us know how we can help make your occasion special.
             </p>
+            <p>As an extra, we prepared a funny tool - check out below our usual pies' crust types and fillings.</p>
+            <hr>
+            <h2></h2>
+            <div id="crust-viewer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+                    <rect x="0" y="0" width="400" height="400" fill="#F2EDD7FF" stroke="black"/>
+                    <text id="pie-view-title" x="200" y="30" text-anchor="middle">
+                        Pie Crust & Filling Types Viewer
+                    </text>
+                    <image x="320" y="320" width="50" height="50" href="assets/favicon.ico"/>
+                    <circle class="animate" id="crust-outer" cx="200" cy="200" r="150" fill="transparent"/>
+                    <circle class="animate" id="crust-inner" cx="200" cy="200" r="110" fill="transparent"/>
+                    <circle class="animate" id="filling" cx="200" cy="200" r="140" fill="transparent"/>
+                </svg>
+                <div id="options" class="options">
+                    <fieldset>
+                        <legend>Please choose a crust</legend>
+                        <input type="radio" name="crust" value="single" checked/> <span class="crust-name">One-Crust</span> - crust along the sides and bottom of the pan. <br>
+                        <input type="radio" name="crust" value="double"/> <span class="crust-name">Two-Crust</span> - bottom, sides and top crust baked with the filling<br>
+                        <input type="radio" name="crust" value="lattice"/> <span class="crust-name">Lattice</span> - decorative type of double crust with strips of dough woven horizontally and vertically to form a matlike top.<br>
+                        <input type="radio" name="crust" value="graham"/> <span class="crust-name">Graham Cracker</span> - single crust with the dough made of graham crackers.<br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Please choose a filling</legend>
+                        <input type="radio" name="filling" value="apple" checked/> <span class="filling-name">Apple</span><br>
+                        <input type="radio" name="filling" value="cherry"/> <span class="filling-name">Cherry</span> <br>
+                        <input type="radio" name="filling" value="cranberry"/> <span class="filling-name">Cranberry</span><br>
+                        <input type="radio" name="filling" value="peach"/> <span class="filling-name">Peach</span><br>
+                        <input type="radio" name="filling" value="rhubarb"/> <span class="filling-name">Rhubarb</span><br>
+                        <input type="radio" name="filling" value="strawberry"/> <span class="filling-name">Strawberry</span><br>
+                        <input type="radio" name="filling" value="pumpkin"/> <span class="filling-name">Pumpkin</span><br>
+                    </fieldset>
+                    <button id="animate">Overview!</button>
+                </div>
+            </div>
         </article>
     </main>
     <footer><a id="author" href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year"></span> M.C.I.</a></footer>
     <script src="js/script.js"></script>
+    <script src="js/pie-view.js"></script>
 </body>
 </html>

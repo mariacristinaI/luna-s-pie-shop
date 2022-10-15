@@ -95,7 +95,6 @@ article {
 }
 
 h1 {
-    font-family: 'Satisfy', cursive;
     margin-top: 0.5em;
 }
     h1, .established {
@@ -105,6 +104,9 @@ h1 {
         font-style: italic;
     }
 
+    h1, #pie-view-title, legend {
+        font-family: 'Satisfy', cursive;
+    }
 h3 {
     font-size: 1.3em;
 }
@@ -357,4 +359,18 @@ hr {
 #contact {
     font-size: 1.5rem;
     border-right: 1px solid $secondaryColor;
+}
+#pie-view-title {
+    font-size: 1.7rem;
+}
+#pie-view-title, .crust-name {
+    font-weight: bold;
+}
+.animate {
+    transition: all 1s;
+}
+#options {
+    fieldset {
+        font-size: 1.3rem;
+    }
 }

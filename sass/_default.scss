@@ -27,6 +27,7 @@ img {
 header {
     background-color: $primaryColor;
     border-bottom: 1px solid #755139FF;
+    box-shadow: 0px 3px 15px;
     display: block;
     position: fixed;
     top: 0;
@@ -66,8 +67,11 @@ nav {
             box-shadow: 1px 3px 1px 1px $highlightColor;
         }
         li:hover {
-            background-color: rgba(0,0,0,0.2);
+            background-color: #f6f4f0/*rgba(0,0,0,0.2)*/;
             border-radius: 7%;
+        }
+        li:hover > a {
+            color: $primaryColor;
         }
 }
 
@@ -79,6 +83,27 @@ main {
 
 aside {
     width: 214px;
+    ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li {
+        background-color: $secondaryColor;
+        padding: 8px;
+        margin-right: 8px;
+        margin-bottom: 2px;
+    }
+    a {
+        display: flex;
+        justify-content: space-between;
+        color: $whiteChocolate;
+    }
+    span {
+        color: $primaryColor;
+        font-weight: bold;
+        padding-right: 0;
+    }
 }
     #logo {
         height: 150px;
@@ -90,8 +115,7 @@ article {
     width: 80%;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(190, 173, 152, 0.55);
-    border: 1px solid $orangeChocolate;
+    background-color: #f6f4f0 /*rgba(190, 173, 152, 0.55)*/;
 }
 
 h1 {
@@ -148,8 +172,15 @@ a, #favorite {
     text-decoration: none;
 }
 
+.macha {
+    color: $secondaryColor;
+}
+
 .pie-promotion, .star {
     background-color: #F2EDD7FF;
+}
+.pie-promotion, .star, svg, .pink-shadow {
+    box-shadow: 5px 5px 17px $primaryColor;
 }
 
 /*table {
@@ -181,7 +212,7 @@ a, #favorite {
 }
 
 footer{
-    background-color: #61574c;
+    background-color: #f6f4f0 /*#61574c*/;
     text-align:center;
     padding: 7px;
     position: fixed;
@@ -190,7 +221,7 @@ footer{
     bottom: 0px;
 
     #author {
-        color: $whiteChocolate;
+        /*color: $whiteChocolate;*/
         font-family: 'Satisfy', cursive !important;
         font-size: 1em;
         font-weight: initial;
@@ -332,9 +363,10 @@ hr {
     margin-top: 15px;
 }
 
-#menu-background {
+/*#menu-background {
     background-color: rgba(205, 185, 158, 0.5);
-}
+    border: 1px solid $orangeChocolate;
+}*/
 
 .item p {
     display: inline-block;

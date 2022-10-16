@@ -23,6 +23,7 @@ img {
 header {
   background-color: #D198C5FF;
   border-bottom: 1px solid #755139FF;
+  box-shadow: 0px 3px 15px;
   display: block;
   position: fixed;
   top: 0;
@@ -55,8 +56,10 @@ nav li {
 nav li.active {
   box-shadow: 1px 3px 1px 1px #F2EDD7FF; }
 nav li:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #f6f4f0;
   border-radius: 7%; }
+nav li:hover > a {
+  color: #D198C5FF; }
 
 main {
   display: block;
@@ -65,6 +68,23 @@ main {
 
 aside {
   width: 214px; }
+  aside ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  aside li {
+    background-color: #40A798;
+    padding: 8px;
+    margin-right: 8px;
+    margin-bottom: 2px; }
+  aside a {
+    display: flex;
+    justify-content: space-between;
+    color: #faf7f5; }
+  aside span {
+    color: #D198C5FF;
+    font-weight: bold;
+    padding-right: 0; }
 
 #logo {
   height: 150px;
@@ -76,8 +96,7 @@ article {
   width: 80%;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(190, 173, 152, 0.55);
-  border: 1px solid #1F150F; }
+  background-color: #f6f4f0; }
 
 h1 {
   margin-top: 0.5em; }
@@ -125,8 +144,14 @@ a, #favorite {
   font-weight: bold;
   text-decoration: none; }
 
+.macha {
+  color: #40A798; }
+
 .pie-promotion, .star {
   background-color: #F2EDD7FF; }
+
+.pie-promotion, .star, svg, .pink-shadow {
+  box-shadow: 5px 5px 17px #D198C5FF; }
 
 /*table {
     border: 2px solid #edebe2;
@@ -153,7 +178,7 @@ th {
   display: flex; }
 
 footer {
-  background-color: #61574c;
+  background-color: #f6f4f0;
   text-align: center;
   padding: 7px;
   position: fixed;
@@ -161,7 +186,7 @@ footer {
   right: 0px;
   bottom: 0px; }
   footer #author {
-    color: #faf7f5;
+    /*color: $whiteChocolate;*/
     font-family: 'Satisfy', cursive !important;
     font-size: 1em;
     font-weight: initial; }
@@ -273,9 +298,10 @@ hr {
   color: #40A798;
   margin-top: 15px; }
 
-#menu-background {
-  background-color: rgba(205, 185, 158, 0.5); }
-
+/*#menu-background {
+    background-color: rgba(205, 185, 158, 0.5);
+    border: 1px solid $orangeChocolate;
+}*/
 .item p {
   display: inline-block;
   font-size: 1.3rem;
@@ -459,6 +485,9 @@ hr {
 
   #home-highlight {
     grid-template-columns: 1fr 1fr; }
+
+  #menu-background {
+    width: 700px; }
 
   #crust-viewer {
     display: grid;

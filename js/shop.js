@@ -36,7 +36,9 @@ window.onload = function() {
     var favorite = document.getElementById('favorite');
     if(window.sessionStorage) {
         if(sessionStorage.getItem('apple-pie') == 'true') {
-            favorite.innerHTML = "The apple pie is one of your favorites. ˶ˆ꒳ˆ˵"
+            favorite.innerHTML = "The apple pie is one of your favorites. ˶ˆ꒳ˆ˵";
+            const ap = document.getElementById("apple-pie");
+            ap.classList.add("pink-shadow");  
         }
         if(sessionStorage.length == 0) {
             favorite.innerHTML = "Enjoy browsing!"

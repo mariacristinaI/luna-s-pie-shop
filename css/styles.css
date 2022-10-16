@@ -80,8 +80,7 @@ article {
   border: 1px solid #1F150F; }
 
 h1 {
-  margin-top: 0.5em;
-  padding: 50px 0; }
+  margin-top: 0.5em; }
 
 h1, .established {
   text-align: center; }
@@ -238,6 +237,9 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 1vw; }
+
+#order-intro {
+  padding: 50px 0; }
 
 #order-form .input-group {
   margin-bottom: 20px; }

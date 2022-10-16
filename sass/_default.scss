@@ -96,7 +96,6 @@ article {
 
 h1 {
     margin-top: 0.5em;
-    padding: 50px 0;
 }
     h1, .established {
         text-align: center;
@@ -288,29 +287,28 @@ footer{
     grid-template-columns: 1fr 1fr;
     margin-top: 1vw;
 }
+#order-intro {
+    padding: 50px 0;
+}
 #order-form {
     .input-group {
         margin-bottom: 20px;
-    }
-    
+    }   
     .input-group input, .input-group textarea, .input-group select {
         padding: 10px;
         border: 1px solid #999;
         border-radius: 2px;
         width: 100%;
-    }
-    
+    }   
     label {
         font-weight: 600;
-    }
-    
+    }   
     input[type="reset"] {
         background-color: transparent;
         border: 0;
         text-decoration: underline;
         cursor: pointer;
-    }
-    
+    }   
     input[type="submit"] {
         border: 1px solid #999;
         border-radius: 3px;
@@ -348,8 +346,7 @@ hr {
     .flavour, .dessert {
         text-align: right;
         width: 49%;
-    }
-    
+    }   
     .price {
         font-style: italic;
         text-align: left;

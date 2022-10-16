@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", function(e){
             desc.innerText= pieOrder.desc;
 
             const img = pie.querySelector("img");
-            img.setAttribute("src", `assets/images/pies/${pieOrder.id}.png`);
+            img.setAttribute("src", `assets/images/pies/${pieOrder.id}.webp`);
             img.setAttribute("alt", pieOrder.title);
     }
 });

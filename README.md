@@ -6,4 +6,6 @@ The shop's theme is centered around a fictional cat named Luna, who sells homema
 
 Live Page: https://mariacristinai.github.io/Luna-s-Pie-Shop/
 
+![Screenshot of the Shop Page](/assets/images/screenshot.jpg?raw=true "Pies Landing Page")
+
 Side-note: The logo is self-made.

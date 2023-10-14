@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="sass/styles.css" type="text/css"/>
     <title>Pies | Luna's Café & Pie Shop</title>
 </head>
 <body>
@@ -23,17 +23,19 @@
         </nav>
     </header>
     <main>
-        <aside>
+        <aside class="aside-mobile-none">
             <a title="Homepage" href="index.html">
                 <img id="logo" src="assets/images/HomemadePies.png" alt="Luna's Café & Pie Shop Logo">
             </a>
             <p class="pie" id="favorite" style="width:150px;"></p>
+            <div class="steam" style="height:200px;"></div>
         </aside>
-        <article>
+        <article id="pie-article" class="article-mobile">
+            </br>
             <h1>Homemade Pies</h1>
             <!--<hr>-->
             <section class="row">
-                <div id="apple-pie" class="pie small-12 medium-6 large-2">
+                <div id="apple-pie" class="pie">
                     <button id="favorite-button" onclick="save()" type="button">❤</button>
                     <img src="assets/images/pies/apple-pie.webp" alt="Apple Pie"/>
                     <div class="columns">
@@ -43,7 +45,7 @@
                     <p class="desc">Our famous apple pie!</p>
                     <button data-order="apple-pie">Order</button>
                 </div>
-                <div class="pie star small-12 medium-6 large-2">
+                <div class="pie star">
                     <img src="assets/images/pies/spicy-pie.webp" alt="Spicy Apple Pie"/>
                     <div class="columns">
                         <div class="title">Spicy Apple Pie</div>
@@ -52,7 +54,7 @@
                     <p class="desc">A familiar taste with a twist!</p>
                     <button data-order="spicy-pie">Order</button>
                 </div>
-                <div class="pie small-12 medium-6 large-2">
+                <div class="pie">
                     <img src="assets/images/pies/cherry-pie.webp" alt="Cherry Pie"/>
                     <div class="columns">
                         <div class="title">Cherry Pie</div>
@@ -61,7 +63,7 @@
                     <p class="desc">A summer classic!</p>
                     <button data-order="cherry-pie">Order</button>
                 </div>
-                <div class="pie small-12 medium-6 large-2">
+                <div class="pie">
                     <img src="assets/images/pies/cranberry-pie.webp" alt="Cranberry Pie"/>
                     <div class="columns">
                         <div class="title"> Cranberry Pie</div>
@@ -70,7 +72,7 @@
                     <p class="desc"> A Christmas favorite.</p>
                     <button data-order="cranberry-pie">Order</button>
                 </div>
-                <div class="pie small-12 medium-6 large-2">
+                <div class="pie">
                     <img src="assets/images/pies/peach-pie.webp" alt="Peach Pie"/>
                     <div class="columns">
                         <div class="title">Peach Pie</div>
@@ -79,7 +81,7 @@
                     <p class="desc">Sweet as peach</p>
                     <button data-order="peach-pie">Order</button>
                 </div>
-                <div class="pie small-12 medium-6 large-2">
+                <div class="pie">
                     <img src="assets/images/pies/rhubarb-pie.webp" alt="Rhubarb Pie"/>
                     <div class="columns">
                         <div class="title">Rhubarb Pie</div>
@@ -88,16 +90,16 @@
                     <p class="desc">My God, so sweet!</p>
                     <button data-order="rhubarb-pie">Order</button>
                 </div>
-                <div class="pie small-12 medium-6 large-2">
+                <div class="pie">
                     <img src="assets/images/pies/strawberry-pie.webp" alt="Strawberry Pie"/>
                     <div class="columns">
                         <div class="title">Strawberry Pie</div>
                         <div class="price">€17.95</div>
                     </div>
-                    <p class="desc">Our delicious strawberry pie!</p>
+                    <p class="desc">Yummy strawberry pie!</p>
                     <button data-order="strawberry-pie">Order</button>
                 </div>
-                <div class="pie small-12 medium-6 large-2">
+                <div class="pie">
                     <img src="assets/images/pies/pumpkin-pie.webp" alt="Pumpkin Pie"/>
                     <div class="columns">
                         <div class="title">Pumpkin Pie</div>
@@ -106,20 +108,23 @@
                     <p class="desc">Our Halloween favorite!</p>
                     <button data-order="pumpkin-pie">Order</button>
                 </div>
-                <div class="pie small-12 medium-6 large-2">
+                <div class="pie">
                     <img src="assets/images/pies/christmas-pie.webp" alt="Christmas Apple Pie"/>
                     <div class="columns">
                         <div class="title"> Christmas Pie</div>
                         <div class="price">€19.95</div>
                     </div>
-                    <p class="desc">Happy holidays with this pie!</p>
+                    <p class="desc">Happy holidays gift!</p>
                     <button data-order="christmas-pie">Order</button>
                 </div>
             </section>
             <h2 id="pie-stock">More pies will be in stock soon!</h2>
+            <div id="developer">
+                <a href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year">2021</span> M.C.I.</a>
+            </div>
         </article>
     </main>
-    <footer><a id="author" href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year">2021</span> M.C.I.</a></footer>
+    <footer></footer>
     <script src="js/script.js"></script>
     <script src="js/shop.js"></script>
 </body>

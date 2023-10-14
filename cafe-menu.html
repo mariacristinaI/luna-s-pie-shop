@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="sass/styles.css" type="text/css"/>
     <title>Café Menu | Luna's Café & Pie Shop</title>
 </head>
 <body>
@@ -31,8 +31,8 @@
             <h4>We have:</h4>
             <!--<iframe src="pies.html" width="150px" height="150px" frameborder="0"></iframe>-->
             <ul style="list-style-type:square; text-align:left;">
-                <li><a href="pies.html"><div>Fruit Pies</div><span>7</span></a></li>
-                <li><a href="pies.html"><div>Seasonal Pies</div><span>2</span></a></li>
+                <li><a href="pies.html"><div>Fruit Pies</div><span class="number">7</span></a></li>
+                <li><a href="pies.html"><div>Seasonal</div><span class="number">2</span></a></li>
             </ul>
             <form action="pies.html" enctype="application/x-www-form-urlencoded" method="GET"> 
                 <input type="text" name="text" class="search" placeholder="Search our store">
@@ -42,15 +42,18 @@
             <h4>Our Weekly Promotions</h4>
             <br>
             <div class="pie-promotion">
-                <h4>Spicy Apple Pie</h4>
-                <samp>€12.95 - serves 4</samp>
+                <h4>Cappuccino</h4>
+                <samp>€2 - One cup</samp>
                 <br>
-                <a href="pies.html">
-                <img src="assets/images/pies/spicy-pie.webp" width="100%">
-                </a>
+                <figure>
+                    <img src="https://assets.codepen.io/296057/fem-capuccino.jpg" alt="A cup of cappuccino." />
+                </figure>
             </div>
+            <div class="steam" style="height:200px;"></div>
         </aside>
         <article id="menu-background">
+            <div>
+            </br>
             <h1>Café Menu</h1>
             <br><hr>
             <section>
@@ -89,7 +92,11 @@
             </section>
         </article>
     </main>
-    <footer><a id="author" href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year">2021</span> M.C.I.</a></footer>
+    <footer>
+        <div id="developer">
+            <a href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year">2021</span> M.C.I.</a>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

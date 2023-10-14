@@ -2,6 +2,28 @@
     #cart {
         grid-template-columns: 1fr;
     }
+    .Welcome, #contact {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .pink-shadow {
+        box-shadow:none;
+    }
+    #menu-background {
+        height: 100vh;
+    }
+    #crust-viewer {
+        margin: -5%;
+    }
+    #options fieldset {
+        font-size: 1rem;
+        padding: 20px;
+    }
+    .crust-name, .filling-name {
+        padding: 5px;
+    }
 }
 @media screen and (max-width: 480px) {
     #baker {

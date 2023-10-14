@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="sass/styles.css" type="text/css"/>
     <title>Contact | Luna's Café & Pie Shop</title>
 </head>
 <body>
@@ -23,13 +23,13 @@
         </nav>
     </header>
     <main>
-        <aside>
+        <aside class="aside-mobile-none">
             <a title="Homepage" href="index.html">
                 <img id="logo" src="assets/images/HomemadePies.png" alt="Luna's Café & Pie Shop Logo">
             </a>
             <!--<canvas id="canvas" height="150" width="150"></canvas>-->
         </aside>
-        <article id="contact">
+        <article id="contact" class="article-mobile">
             <h1>Contact</h1>
             <p>We are always glad to hear from you!</p>
             <p>
@@ -41,7 +41,7 @@
             <h2></h2>
             <div id="crust-viewer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
-                    <rect x="0" y="0" width="400" height="400" fill="#F2EDD7FF" stroke="black"/>
+                    <rect x="0" y="0" width="400" height="400" fill="#f1e3d3" stroke="black"/>
                     <text id="pie-view-title" x="200" y="30" text-anchor="middle">
                         Pie Crust & Filling Types Viewer
                     </text>
@@ -73,7 +73,11 @@
             </div>
         </article>
     </main>
-    <footer><a id="author" href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year">2021</span> M.C.I.</a></footer>
+    <footer>
+        <div id="developer">
+            <a href="https://github.com/mariacristinaI" target="_blank">&copy;<span id="year">2021</span> M.C.I.</a>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
     <script src="js/pie-view.js"></script>
     <script src="js/sketch.js"></script>

@@ -1,6 +1,7 @@
 nav {
     ul {
-        margin-left: 2vw;
+        /*margin-left: 2vw;*/
+        padding-left: 37%;
     }
     li {
         width: auto;
@@ -8,6 +9,10 @@ nav {
     a {
         padding: .7rem 1rem;
     }
+}
+
+#pie-article {
+    width: 100%;
 }
 
 #home-highlight {

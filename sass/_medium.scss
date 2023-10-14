@@ -1,3 +1,30 @@
+@media only screen and (max-width:1230px) {
+    .Welcome {
+        font-size: 1.1rem;
+    }
+    #home-highlight {
+        grid-template-columns: 1fr !important;
+    }
+    #banner {
+        display: none;
+    }
+    main {
+        height: 100%;
+    }
+    .steam {
+        display: none;
+    }
+    .aside-mobile-none {
+        display: none;
+    }
+    .article-mobile {
+        width: 100%;
+    }
+    .pie {
+        margin: 10px auto;
+    }
+}
+
 @media screen and (min-width:481px) and (max-width:1023px) {
     @for $i from 1 through 12 {
         $width: ($i / 12) * 100%;
@@ -14,12 +41,6 @@
         width: 100%;
     }
     aside {
-        display: none;
-    }
-    #home-highlight {
-        grid-template-columns: 1fr;
-    }
-    #banner {
         display: none;
     }
     #order-page, #menu-background {
@@ -67,12 +88,18 @@
     }
     aside, article {
         padding: 1em;
-        margin-bottom: 40px;
+        /*margin-bottom: 40px;*/
     }
     h1 {
-        font-size: 2.3rem;
+        font-size: 1.7rem;
+    }
+    nav a:link, tbody {
+        font-size: 1.3rem;
     }
     td:first-of-type {
         width: 50%;
+    }
+    .Welcome {
+        font-size: 1.1rem;
     }
 }
